@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+
+.container {
+  border: 5px solid black;
+  min-height: 80vh;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  border: 5px solid lightskyblue;
+  text-align: center; 
+  font-size: 30px;
+  padding: 7px;
+}
+
+/* .item:nth-of-type(1) {
+  background-color: lightskyblue;
+} */
+
+.unicorn{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background-color: lightskyblue;
+}
+
+.hippogriff{
+  grid-column: 3/5;
+  grid-row: 2/2;
+  background-color: rgb(255,182,193);
+}
+
+.owlbear{
+  grid-column: 2/3;
+  grid-row: 3/5;
+  background-color: rgb(144,238,144);
+}
+
+.basilisk{
+  grid-column: 4/5;
+  grid-row: 3/5;
+  background-color: rgb(255,170,255)
+}
+
